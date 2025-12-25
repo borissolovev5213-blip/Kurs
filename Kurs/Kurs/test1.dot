@@ -1,0 +1,18 @@
+graph G {
+  rankdir=LR;
+
+  L0 [shape=circle];
+  L1 [shape=circle];
+  L2 [shape=circle];
+  L3 [shape=circle];
+  R0 [shape=box];
+  R1 [shape=box];
+  R2 [shape=box];
+  R3 [shape=box];
+  R4 [shape=box];
+
+  L3 -- R0 [color=red, penwidth=2];
+  L0 -- R1 [color=red, penwidth=2];
+  L1 -- R2 [color=red, penwidth=2];
+  L2 -- R3 [color=red, penwidth=2];
+}

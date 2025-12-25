@@ -1,0 +1,24 @@
+graph G {
+    node [shape=circle];
+    rankdir=LR;
+
+    subgraph left {
+        rank=same;
+        L0 [label="L0"];
+        L1 [label="L1"];
+        L2 [label="L2"];
+    }
+
+    subgraph right {
+        rank=same;
+        R0 [label="R0"];
+        R1 [label="R1"];
+        R2 [label="R2"];
+    }
+
+    L0 -- R0 [color="gray", penwidth=1];
+    L1 -- R1 [color="gray", penwidth=1];
+    L0 -- R1 [color="red", penwidth=3];
+    L1 -- R2 [color="red", penwidth=3];
+    L2 -- R0 [color="red", penwidth=3];
+}
